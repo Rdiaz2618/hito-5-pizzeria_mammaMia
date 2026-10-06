@@ -160,6 +160,16 @@
   font-size: 1.4rem;
 }
 
+.pagina-perfil,
+.pagina-no-encontrada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 3rem 1rem;
+  background: #f6f3ef;
+}
+
 @media (max-width: 768px) {
   .pagina-autenticacion {
     grid-template-columns: minmax(0, 420px);

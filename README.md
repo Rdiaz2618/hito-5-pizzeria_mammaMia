@@ -1,10 +1,10 @@
-# Pizzería Mamma Mia! - Hito 4
+# Pizzería Mamma Mia! - Hito 5
 
-Proyecto del Hito 4 de la Academia Desafío Latam - Consumo de APIs con React.
+Proyecto del Hito 5 de la Academia Desafío Latam - React Router I.
 
 ## Descripción
 
-Aplicación web desarrollada con **React** y **Vite.js** que toma como base los hitos anteriores de Pizzería Mamma Mia e incorpora consumo de API con `fetch` y `useEffect`.
+Aplicación web desarrollada con **React** y **Vite.js** que toma como base los hitos anteriores de Pizzería Mamma Mia e incorpora enrutamiento con React Router.
 
 ## Componentes
 
@@ -16,6 +16,8 @@ Aplicación web desarrollada con **React** y **Vite.js** que toma como base los 
 - **Cart**: carrito de compras que permite aumentar y disminuir cantidades, elimina productos con cantidad cero y calcula el total.
 - **Registro**: formulario de registro con correo electrónico, contraseña, confirmación de contraseña y validaciones.
 - **InicioSesion**: formulario de inicio de sesión con correo electrónico, contraseña y validaciones.
+- **Perfil**: vista de perfil con correo estático y botón de cerrar sesión.
+- **NoEncontrado**: vista 404 con enlace de regreso al inicio.
 - **Footer**: pie de página con la información de derechos reservados.
 
 ## Tecnologías utilizadas

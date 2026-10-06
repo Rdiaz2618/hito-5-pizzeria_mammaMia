@@ -1,8 +1,8 @@
+import { Link } from 'react-router-dom';
 import { formatPrice } from '../utils/formatPrice';
 
 const Navbar = () => {
   const total = 25000;
-  const token = false;
 
   return (
     <nav className="navbar navbar-dark bg-dark px-3">
@@ -10,22 +10,24 @@ const Navbar = () => {
         <span className="navbar-brand mb-0">Pizzería Mamma Mia!</span>
 
         <div className="d-flex gap-2 flex-wrap">
-          <button className="btn btn-outline-light btn-sm">🍕 Inicio</button>
+          <Link className="btn btn-outline-light btn-sm" to="/">
+            🍕 Inicio
+          </Link>
 
-          {token ? (
-            <>
-              <button className="btn btn-outline-light btn-sm">🔓 Perfil</button>
-              <button className="btn btn-outline-light btn-sm">🔒 Cerrar sesión</button>
-            </>
-          ) : (
-            <>
-              <button className="btn btn-outline-light btn-sm">🔐 Iniciar sesión</button>
-              <button className="btn btn-outline-light btn-sm">🔐 Registrarse</button>
-            </>
-          )}
+          <Link className="btn btn-outline-light btn-sm" to="/login">
+            🔐 Iniciar sesión
+          </Link>
+          <Link className="btn btn-outline-light btn-sm" to="/register">
+            🔐 Registrarse
+          </Link>
+          <Link className="btn btn-outline-light btn-sm" to="/profile">
+            🔓 Perfil
+          </Link>
         </div>
 
-        <button className="btn btn-warning btn-sm">🛒 Total: {formatPrice(total)}</button>
+        <Link className="btn btn-warning btn-sm" to="/cart">
+          🛒 Total: {formatPrice(total)}
+        </Link>
       </div>
     </nav>
   );

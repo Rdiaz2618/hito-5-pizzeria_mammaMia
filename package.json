@@ -2,11 +2,12 @@
   "name": "pizzeria-mammamia",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Rdiaz2618.github.io/hito-4-pizzeria_mammaMia",
+  "homepage": "https://Rdiaz2618.github.io/hito-5-pizzeria_mammaMia",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "node scripts/crear404.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
@@ -14,7 +15,8 @@
   },
   "dependencies": {
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
